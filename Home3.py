@@ -109,9 +109,9 @@ def taking(load_capacity: int) ->list:
     for names in dictionary.keys():
         list_names.append(names)
 
-    perm_set = itertools.permutations(list_names) # weight
+    all_options = itertools.permutations(list_names) 
 
-    for i in perm_set:
+    for i in all_options:
         for j in i:
             if weight + dictionary[j] <= load_capacity:
                 weight += dictionary[j]

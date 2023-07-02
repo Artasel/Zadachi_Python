@@ -25,6 +25,25 @@ fourth = 'cbhcghb'
 fifth = 's'
 
 print(work_with_s(first, second, third, fourth, fifth))
+
+
+
+eggs = 5
+tomatoes = 10
+potatoes = 3
+sugar = 2
+s = 34
+
+def replace_s_vars():
+    for var_name in list(globals()):
+        if var_name != "s" and var_name.endswith("s"):
+            globals()[var_name[:-1]] = globals()[var_name]
+            del globals()[var_name]
+            globals()[var_name] = None
+
+
+replace_s_vars()
+print(eggs, egg) # переменная egg создалась через globals  хотя и не обьявляясь в коде
 '''
 
 
@@ -67,7 +86,7 @@ def transposition(matr, new_width, new_height):
                 num_list =[]                   # обнуляем обычный список
     
     return trans_matr
-    
+
 
 
 

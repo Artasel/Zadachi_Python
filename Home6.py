@@ -121,7 +121,6 @@ def print_mass(mass: list):
 
 def random_mass():
     amount_success = 0
- #   qwe = 1   # удали
     while True:
         mass = [[0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], \
      [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0]]
@@ -149,8 +148,6 @@ def random_mass():
                 mass[x][y] = 1
 
         res = decision(mass)
-   #     print(qwe)
-  #      qwe += 1
 
         if res:
             amount_success += 1

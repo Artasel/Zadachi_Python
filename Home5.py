@@ -85,3 +85,10 @@ qwe = fib_func(12)
 
 print(*qwe)
 '''
+
+
+from Seminar_6 import guess
+
+guess(1, 100, 10)
+
+

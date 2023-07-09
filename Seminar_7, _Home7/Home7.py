@@ -15,7 +15,7 @@
 '''
 import os
 
-os.chdir('C:/Users/Tarona/Desktop/Zadachi_Python/Seminar_7')
+os.chdir('C:/Users/Tarona/Desktop/Zadachi_Python/Seminar_7, _Home7')
 
 def rename_file_func(number_digits: int, source_extension: str, end_extension: str, range_original_name: list[int, int], desired_name = ''):
     number = 0
@@ -49,6 +49,6 @@ def rename_file_func(number_digits: int, source_extension: str, end_extension: s
         print(f'{file_name = }')
 
 
-range_name = [2, 5]
+range_name = [1, 8]
 
-rename_file_func(2, 'txt', 'json', range_name, 'new_name')
+rename_file_func(6, 'json', 'txt', range_name)

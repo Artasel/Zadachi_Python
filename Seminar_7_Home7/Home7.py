@@ -15,7 +15,7 @@
 '''
 import os
 
-os.chdir('C:/Users/Tarona/Desktop/Zadachi_Python/Seminar_7, _Home7')
+# os.chdir('C:/Users/Tarona/Desktop/Zadachi_Python/Seminar_7, _Home7')
 
 def rename_file_func(number_digits: int, source_extension: str, end_extension: str, range_original_name: list[int, int], desired_name = ''):
     number = 0

@@ -13,6 +13,7 @@
 желаемое конечное имя, если оно передано. Далее счётчик файлов и расширение.
 Соберите из созданных на уроке и в рамках домашнего задания функций пакет  для работы с файлами.
 '''
+
 import os
 
 # os.chdir('C:/Users/Tarona/Desktop/Zadachi_Python/Seminar_7, _Home7')
@@ -49,6 +50,7 @@ def rename_file_func(number_digits: int, source_extension: str, end_extension: s
         print(f'{file_name = }')
 
 
-range_name = [1, 8]
 
-rename_file_func(6, 'json', 'txt', range_name)
+if __name__ == '__main__':
+    range_name = [1, 8]
+    rename_file_func(6, 'json', 'txt', range_name)

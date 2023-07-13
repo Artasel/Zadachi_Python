@@ -9,7 +9,6 @@ import os
 import random
 import shutil
 
-# os.chdir('C:/Users/Tarona/Desktop/Zadachi_Python/Seminar_7,_Home7')
 
 
 

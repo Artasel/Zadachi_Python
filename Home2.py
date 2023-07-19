@@ -2,22 +2,23 @@
 # используйте для проверки своего результата.
 # В шестнадцатеричной записи числа 10, 11, 12, 13, 14, 15 записываются буквами A, B, C, D, E, F соответственно.
 
-'''
-hexadecimalS = 16
-diction = {10: 'a', 11: 'b', 12: 'c', 13: 'd', 14: 'e', 15: 'f'}
 
-def get_result(num: int, divider: int):
+
+
+def get_result(num: int):
+    hexadecimalS = 16
+    diction = {10: 'a', 11: 'b', 12: 'c', 13: 'd', 14: 'e', 15: 'f'}
     result = ""
     while num > 0:
-        res = num % divider
+        res = num % hexadecimalS
         if res in diction:
             result = diction[res] + result
         else:
             result = str(res) + result
-        num //= divider
+        num //= hexadecimalS
     return result
 
-while True: 
+while True:
     try:
         number = int(input("Введите число: "))
         break
@@ -25,11 +26,13 @@ while True:
         print("Неверный ввод, требуется число")
 
 print(f'{get_result(number, hexadecimalS)} == {hex(number)[2:]}')
-'''
+
 
 # Напишите программу, которая принимает две строки вида “a/b” - дробь с числителем и знаменателем. Программа должна возвращать 
 # сумму и произведение* дробей. Для проверки своего кода используйте модуль fractions.
 
+
+'''
 import fractions
 import math
 
@@ -173,3 +176,5 @@ qwe = '23/23'
 ewq = '654/42'
 
 print(example(qwe, ewq, '/'))
+
+'''
